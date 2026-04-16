@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setLoading(true);
         try {
-            const response = await fetch('http://localhost:5000/api/optimize', {
+            const response = await fetch('https://disaster-supply-chain.onrender.com', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ supplies, zones })
